@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - InternSphere</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        /* Main Navigation Bar */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        /* Sub Navigation Bar */
+        .sub-nav {
+            background-color: #444;
+            text-align: center;
+            padding: 15px 0;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 60px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .services-section .service-item {
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            animation: fadeIn 1.5s ease-in-out;
+            justify-content: space-between;
+        }
+
+        .service-text {
+            flex: 3;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .service-icon {
+            font-size: 80px; /* Larger icon size */
+            margin-right: 20px;
+            color: #ff9800;
+            flex: 1;
+            animation: bounce 1.5s infinite;
+        }
+
+        .service-text h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .service-text p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .service-text a {
+            color: #ff9800;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .service-text a:hover {
+            text-decoration: underline;
+        }
+
+        /* Internship Section */
+        .internship-section {
+            padding: 60px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .internship-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .internship-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            display: inline-block;
+            animation: fadeIn 1.5s ease-in-out;
+            position: relative;
+        }
+
+        .internship-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .internship-card p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .internship-card button {
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .internship-card button:hover {
+            background-color: #e68a00;
+        }
+
+        .internship-card button.coming-soon {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .internship-card button.coming-soon:hover {
+            background-color: #ccc;
+        }
+
+        .internship-icon {
+            font-size: 60px;
+            color: #ff9800;
+            position: absolute;
+            top: -40px;
+            left: calc(50% - 30px);
+            animation: bounce 1.5s infinite;
+        }
+
+        /* Icon hover effect */
+        .internship-icon:hover {
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-item {
+                flex-direction: column;
+                text-align: left;
+            }
+
+            .internship-card {
+                width: 80%;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Bar -->
+    <nav>
+        <ul class="nav-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="logo nav-right">
+            <img src="logo.png" alt="InternSphere Logo"> <!-- Replace 'logo.png' with your actual logo -->
+            <h1>InternSphere</h1>
+        </div>
+    </nav>
+
+    <!-- Sub Navigation Bar for Services Page -->
+    <div class="sub-nav">
+        Services
+    </div>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <h2>Our Services</h2>
+
+        <div class="service-item">
+            <div class="service-icon">💻</div>
+            <div class="service-text">
+                <h3>Website Development</h3>
+                <p>Our website developers provide expert web application development and web design services to our clients. We specialize in developing interactive, scalable, and business-ready custom web solutions.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">☁️</div>
+            <div class="service-text">
+                <h3>Cloud Computing</h3>
+                <p>Our cloud solutions help you move large quantities of data with ease and improve your overall cloud experience, making your investment worthwhile.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">🎨</div>
+            <div class="service-text">
+                <h3>Graphic Design</h3>
+                <p>Our creative team designs visually stunning content like logos, brochures, and banners, ensuring your business makes a lasting impact online.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">🎥</div>
+            <div class="service-text">
+                <h3>Animation Design</h3>
+                <p>Our motion graphics designers create engaging animations for your brand, telling compelling stories that resonate with your audience.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">🗄️</div>
+            <div class="service-text">
+                <h3>Database Management</h3>
+                <p>We offer solutions to manage your databases whether on-premises or in the cloud, ensuring efficiency and performance for your business operations.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-icon">🤖</div>
+            <div class="service-text">
+                <h3>Machine Learning Solutions</h3>
+                <p>Our AI and machine learning services help organizations build customized solutions, unlocking the power of data-driven decision-making.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section class="internship-section">
+        <h2>Internship Opportunities</h2>
+
+        <div class="internship-card">
+            <div class="internship-icon">🌐</div>
+            <h3>Web Development</h3>
+            <p>Gain hands-on experience developing real-world projects. A fantastic opportunity to work in web and app development.</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="internship-card">
+            <div class="internship-icon">🎨</div>
+            <h3>Graphic Design</h3>
+            <p>Work on various visual design strategies, including templates, videos, and web design tasks. Coming soon!</p>
+            <button class="coming-soon">Coming Soon</button>
+        </div>
+
+        <div class="internship-card">
+            <div class="internship-icon">☕</div>
+            <h3>Java Programming</h3>
+            <p>Master Java and web applications through this 4-week program, from development to deployment. Coming soon!</p>
+            <button class="coming-soon">Coming Soon</button>
+        </div>
+
+        <div class="internship-card">
+            <div class="internship-icon">📱</div>
+            <h3>Android Development</h3>
+            <p>Learn to develop mobile apps with hands-on projects and real-world scenarios. Coming soon!</p>
+            <button class="coming-soon">Coming Soon</button>
+        </div>
+
+        <div class="internship-card">
+            <div class="internship-icon">📊</div>
+            <h3>Data Science</h3>
+            <p>Gain remote experience in data science, working on projects and challenges. Coming soon!</p>
+            <button class="coming-soon">Coming Soon</button>
+        </div>
+
+        <div class="internship-card">
+            <div class="internship-icon">🐍</div>
+            <h3>Python Programming</h3>
+            <p>Become proficient in Python programming through our intensive 4-week internship program. Coming soon!</p>
+            <button class="coming-soon">Coming Soon</button>
+        </div>
+
+        <div class="internship-card">
+            <div class="internship-icon">🔒</div>
+            <h3>Cyber Security</h3>
+            <p>Work on real-world cybersecurity projects and gain exposure to top security practices. Coming soon!</p>
+            <button class="coming-soon">Coming Soon</button>
+        </div>
+
+        <div class="internship-card">
+            <div class="internship-icon">☁️</div>
+            <h3>Cloud Computing</h3>
+            <p>Work on cloud computing projects and gain exposure to evolving technologies. Coming soon!</p>
+            <button class="coming-soon">Coming Soon</button>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternSphere - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('assets/imgs/hero.png'); /* Replace with a relevant image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 20px 0;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .hero a {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero a:hover {
+            background-color: #e67e22;
+        }
+
+        /* Overview Section */
+        .overview {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .overview h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .overview p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .overview .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            flex: 1;
+            min-width: 250px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav-left">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#why">Why InternSphere</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="logo nav-right">
+            <img src="logo.png" alt="InternSphere Logo"> <!-- Replace 'logo.png' with your actual logo -->
+            <h1>InternSphere</h1>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Start Your Career Journey with InternSphere</h2>
+        <p>Find the best internships, build real-world experience, and get career-ready with InternSphere. Your gateway to a brighter professional future!</p>
+        <a href="#services">Get Started</a>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview" id="why">
+        <h2>Why InternSphere?</h2>
+        <p>We connect students with top companies offering internships across various industries. At InternSphere, you can gain hands-on experience and prepare yourself for a successful career.</p>
+        <div class="features">
+            <div class="feature">
+                <h3>Wide Range of Opportunities</h3>
+                <p>Access internships in tech, marketing, finance, and many more industries.</p>
+            </div>
+            <div class="feature">
+                <h3>Career Development</h3>
+                <p>We provide resume reviews, interview coaching, and career advice to help you land your dream job.</p>
+            </div>
+            <div class="feature">
+                <h3>Trusted by Top Companies</h3>
+                <p>Partnering with leading organizations to offer real-world experience to students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 InternSphere. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About InternSphere</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* Main Navigation Bar */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        /* Sub Navigation Bar */
+        .sub-nav {
+            background-color: #444;
+            text-align: center;
+            padding: 15px 0;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Why Choose Us Section */
+        .why-choose-us {
+            padding: 60px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .why-choose-us h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .why-choose-us .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            color: #ff9800;
+            margin-bottom: 10px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .feature-card a {
+            color: #ff9800;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .feature-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .why-choose-us .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Navigation Bar -->
+    <nav>
+        <ul class="nav-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#why">Why InternSphere</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="logo nav-right">
+            <img src="logo.png" alt="InternSphere Logo"> <!-- Replace 'logo.png' with your actual logo -->
+            <h1>InternSphere</h1>
+        </div>
+    </nav>
+
+    <!-- Sub Navigation Bar for About Page -->
+    <div class="sub-nav">
+        About
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>We Are InternSphere</h2>
+        <p>
+            At InternSphere, we help students and professionals bridge the gap between academic knowledge and real-world application. We provide top-notch internships, helping our clients achieve their goals by creating reliable, innovative solutions. With a dedicated team of engineers and experts, we pave the way to faster, more efficient growth in the digital world.
+        </p>
+        <p>
+            We believe in:
+            <br><strong>Leadership</strong> - Leading technology to build a better future.
+            <br><strong>Integrity</strong> - Staying true and transparent.
+            <br><strong>Accountability</strong> - Delivering on every commitment.
+        </p>
+        <p>
+            <strong>We Imagine</strong><br>
+            <strong>We Engineer</strong><br>
+            <strong>We Modernize</strong><br>
+            <strong>We Manage</strong>
+        </p>
+        <p>
+            By leveraging innovative, purpose-built technology, InternSphere drives success by increasing revenue, improving efficiency, and reducing costs for all our clients.
+        </p>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="why">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <!-- First Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Data & Analytics</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Second Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>Automation AI/ML</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Third Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>Internet of Things (IoT)</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Fourth Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">☁️</div>
+                <h3>Cloud Solutions</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Fifth Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <h3>Software Development</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Sixth Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>App Development</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Seventh Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Web Development</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Eighth Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">☕</div>
+                <h3>Java Applications</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Ninth Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Search Engine Optimization</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Tenth Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Graphics Design</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Eleventh Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Migrations & Deployment</h3>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- Twelfth Feature -->
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Financial Applications</h3>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
